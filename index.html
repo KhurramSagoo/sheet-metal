@@ -38,12 +38,22 @@
       .logo{
         width: 50px;
       }
+.custom-carousel-image {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.bg-e3f2fd {
+    background-color: #e3f2fd;
+}
+
     </style>
   </head>
 <body>
     
 <!-- navbar -->
-<nav class="navbar navbar-expand-lg bg-body-#e3f2fd fs-5 " >
+<nav class="navbar navbar-expand-lg bg-body-#e3f2fd fs-5 container  " >
   <div class="container d-flex align-items-center justify-content-between  ">
     <a class="navbar-brand" href="#">
       <img src="./assets/logo.png" alt=""></a>
@@ -85,6 +95,19 @@
             <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
           </ul>
         </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://brotherssheetmetal.com/services/">SERVICES</a></li>
+            <li><a class="dropdown-item" href="https://brotherssheetmetal.com/gutter-installation-los-angeles/">GUTTER INSTALLATION</a></li>
+            <li><a class="dropdown-item" href="https://brotherssheetmetal.com/gutter-removal-los-angeles/">GUTTER REMOVAL</a></li>
+            <li><a class="dropdown-item" href="https://brotherssheetmetal.com/gutter-repair-los-angeles/">GUTTER REPAIR</a></li>
+            <!-- <li><hr class="dropdown-divider"></li> -->
+            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+          </ul>
+        </li>
        
       </ul>
       <!-- <form class="d-flex" role="search">
@@ -95,39 +118,108 @@
   </div>
 </nav>
 
-<!-- HOME PAGE -->
-<div class="container ">
-  <div class="row d-flex flex-sm-column flex-lg-row   ">
-    <div class=" col-md-12   col-12 col-lg-8 my-lg-4       ">
-      <img src="./assets/homepage.jpg" alt="" style="width:100%;">
+
+
+
+<!-- carousel -->
+<div id="carouselExampleIndicators" class="carousel slide container  " data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./assets/photo1.jpg" class="d-block w-100  " alt="...">
     </div>
-    <div class=" col-md-12  col-12 col-lg-4 p-3">
-       <h3>Gutters Installation and Replacement Services in Los Angeles</h3>
-        <p>Rain gutters are one of the most critical parts of your home, protecting your home from decay due to dampness. If you are looking for a rain gutter with minimal maintenance requirements, consider the seamless rain gutter models.With seamless rain gutters, leaks are minimized as they are properly coated to prevent erosion. While selecting a seam rain gutter is easy, installing one is certainly not. Therefore, we are here to help. We are a renowned Gutter Installation Company in Los Angeles committed to ensuring your new gutter system performs optimally.</p>
+    <div class="carousel-item">
+      <img src="./assets/photo2.jpg" class="d-block w-100 " alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/photo3.jpg" class="d-block w-100 " alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/photo4.jpg" class="d-block w-100 " alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/photo5.jpg" class="d-block w-100 " alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/photo6.jpg" class="d-block w-100 " alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/photo7.jpg" class="d-block w-100 " alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/photo8.jpg" class="d-block w-100 " alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- HOME PAGE -->
+<div class="container bg-e3f2fd ">
+  <div class="row d-flex flex-sm-column flex-lg-row   ">
+    <!-- <div class=" col-md-12   col-12 col-lg-8 my-lg-4       ">
+      <img src="./assets/homepage.jpg" alt="" style="width:100%;">
+    </div> -->
+    <div class=" col-md-12  col-12 col-lg-12  p-3">
+       <h3 class=" text-bg-info text-center ">Gutters Installation and Replacement Services in Los Angeles</h3>
+        <p class=" ">Rain gutters are one of the most critical parts of your home, protecting your home from decay due to dampness. If you are looking for a rain gutter with minimal maintenance requirements, consider the seamless rain gutter models.With seamless rain gutters, leaks are minimized as they are properly coated to prevent erosion. While selecting a seam rain gutter is easy, installing one is certainly not. Therefore, we are here to help. We are a renowned 
+          <a href="https://brotherssheetmetal.com/gutter-installation-los-angeles/" class="text-decoration-none text-info ">
+
+            Gutter Installation Company in Los Angeles
+          </a>
+           committed to ensuring your new gutter system performs optimally.</p>
     </div>
     
     <!-- <div class="container d-flex flex-sm-column"> -->
     
-    <div class="col-md-12  col-12 col-lg-6  ">
-      <h3>Types of Seamless Rain Gutter</h3>
-      <p>Seamless rain gutters are specifically designed to serve the longest life span. Some of the common types of seamless rain gutters include:</p>
-      <ul class=" text-bg-secondary text-center ">Copper:</ul>
-      <p>The copper rain gutter is a bit expensive, but undoubtedly one of the best options, especially if you live in an area with frequent harsh weather conditions. They are   incredibly durable, don't corrode easily, and are easy to maintain.</p>
-      <ul  class=" text-bg-secondary text-center ">Steel:</ul>
-      <p>Steel is another extremely strong material, but only if it's stainless steel. Stainless steel is less prone to corrosion and is known to offer a longer life span.</p>
-      <ul  class=" text-bg-secondary text-center  ">Aluminum:</ul>
-      <p>Aluminum is an extremely popular choice because it is highly durable, affordable, and looks great. A good quality aluminum rain gutter can last up to two decades.No matter    the type of rain gutter you need for your home, you can rely on our rain gutter specialists in Los Angeles to complete the project perfectly at a reasonable charge.</p>
+    <div class="col-md-12  col-12 col-lg-6   ">
+      <h3 class=" text-bg-info text-center  ">Types of Seamless Rain Gutter</h3>
+      <p class=" ">Seamless rain gutters are specifically designed to serve the longest life span. Some of the common types of seamless rain gutters include:</p>
+      <ul class=" text-bg-info   text-center fw-bold  ">Copper:</ul>
+      <p class="  ">The copper rain gutter is a bit expensive, but undoubtedly one of the best options, especially if you live in an area with frequent harsh weather conditions. They are   incredibly durable, don't corrode easily, and are easy to maintain.</p>
+      <ul  class=" text-bg-info   text-center fw-bold  ">Steel:</ul>
+      <p class="  ">Steel is another extremely strong material, but only if it's stainless steel. Stainless steel is less prone to corrosion and is known to offer a longer life span.</p>
+      <ul  class=" text-bg-info   text-center fw-bold  ">Aluminum:</ul>
+      <p class="  ">Aluminum is an extremely popular choice because it is highly durable, affordable, and looks great. A good quality aluminum rain gutter can last up to two decades.No matter    the type of rain gutter you need for your home, you can rely on our rain gutter specialists in Los Angeles to complete the project perfectly at a reasonable charge.</p>
     </div>
 
     <div class="col-md-12  col-12 col-lg-6   ">
-      <h3>How Do We Work?</h3>
-      <p>Installing new rain gutters is the job of experienced experts. Our rain gutter specialists in Los Angeles are well-trained, certified, and licensed to assist you with any rain gutter service you need, including installation, repair, and maintenance. We work in three steps:</p>
-      <ul class=" text-bg-secondary text-center  ">Schedule your consultation:</ul>
-      <p>When you choose our rain gutter service in Los Angeles, one of our project specialists will visit your place. They will inspect your property, take notes, prepare a plan, and discuss the budget and charges with you.</p>
-      <ul class=" text-bg-secondary text-center  ">Installation day:</ul>
-      <p>Our installation team will manage the installation from start to end, so you don't have to do anything. Our installers are trustworthy, and we use only the best quality products so that you can feel confident about your investment.</p>
-      <ul class=" text-bg-secondary text-center  ">Aluminum:</ul>
-      <p>Aluminum is an extremely popular choice because it is highly durable, affordable, and looks great. A good quality aluminum rain gutter can last up to two decades.No matter the type of rain gutter you need for your home, you can rely on our rain gutter specialists in Los Angeles to complete the project perfectly at a reasonable charge.</p>
+      <h3 class=" text-bg-info text-center  ">How Do We Work?</h3>
+      <p class=" ">Installing new rain gutters is the job of experienced experts. Our rain gutter specialists in Los Angeles are well-trained, certified. We work in three steps:</p>
+      <ul class=" text-bg-info text-center fw-bold  ">Schedule your consultation:</ul>
+      <p class=" ">When you choose our rain gutter service in Los Angeles, one of our project specialists will visit your place. They will inspect your property, take notes, prepare a plan, and discuss the budget and charges with you.</p>
+      <ul class=" text-bg-info text-center fw-bold  ">Get your quote:</ul>
+      <p class=" ">Your quote will be based on the findings during the inspection. It will include the total price you have to pay on the completion of your rain gutter installation.</p>
+      <ul class=" text-bg-info text-center fw-bold  ">Installation day:</ul>
+      <p class=" ">Our installation team will manage the installation from start to end, so you don't have to do anything. Our installers are trustworthy, and we use only the best quality products so that you can feel confident about your investment.</p>
     </div>
 
 
@@ -140,78 +232,84 @@
   <!-- </div> -->
 
 <!-- call for free... -->
-<div class="card text-center container ">
-  <div class="card-header">
-    <h4>
+<div class=" text-center container bg-e3f2fd">
+  <!-- <div class="card-header"> -->
+    <h4 class="fw-bolder fs-1    ">
       Contact Us Today!
 
     </h4>
 
   
-  </div>
+  <!-- </div> -->
   <div class="card-body">
-    <p>
+    <p class="fs-5  ">
       We are a renowned Gutter Installation Company in Los Angeles, serving clients for more than 30 years, making us savvy in whatever we do. Contact us today to get your rainwater gutter installed the best way possible!
     </p>
     
     </p>
   </div>
-  <div class="card-footer text-muted">
-    <h5 class="card-title">Call for a Free Estimate
+  <div class="card-footer text-muted bg-e3f2fd">
+    <h5 class="card-title fs-3">Call for a Free Estimate
       Serving All of Southern California</h5>
-    30 Years! Serving You 1992-2022
+      <p class="fs-4">
+        30 Years! Serving You 1992-2022
+
+      </p>
+      <br>
   </div>
 </div>
 <!-- </div> -->
-<br>
-
+<div class=" bg-e3f2fd container ">
+  <br>
+</div>
 
 <!-- call  -->
 
-<div class="container">
+<div class="container bg-e3f2fd">
   <div class="row">
-    <div class="col col-12  d-flex flex-sm-column flex-lg-row flex-column col-sm-12 col-xl-3 col-lg-3 col-md-3   ">
+    <div class="col col-12  d-flex flex-sm-column flex-lg-row flex-column col-sm-12 col-xl-3 col-lg-3 col-md-3 bg-e3f2fd   ">
       <div class="card text-center">
-        <div class="card-body">
+        <div class="card-body bg-e3f2fd">
           <p class="card-text">SanFernando Valley Foothill Cities</p>
-          <button class="btn btn-dark"><i class="fas fa-phone"></i> <a href="tel:(818) 508-0774" class=" text-white text-decoration-none ">(818) 508-0774</a></button>
+          <button class="btn btn-secondary "><i class="fas fa-phone"></i> <a href="tel:(818) 508-0774" class=" text-white text-decoration-none ">(818) 508-0774</a></button>
       </div>
       </div>
     </div>
     <div class="col col-12  d-flex flex-sm-column flex-lg-row flex-column col-sm-12 col-xl-3 col-lg-3 col-md-3   ">
       <div class="card text-center">
-        <div class="card-body">
+        <div class="card-body bg-e3f2fd">
           <p class="card-text">Greater Los Angeles,
             Hollywood</p>
-          <button class="btn btn-dark"><i class="fas fa-phone"></i> <a href="tel:(323) 464-1853" class=" text-white text-decoration-none ">(323) 464-1853</a></button>
+          <button class="btn btn-secondary "><i class="fas fa-phone"></i> <a href="tel:(323) 464-1853" class=" text-white text-decoration-none ">(323) 464-1853</a></button>
       </div>
       </div>
     </div>
     <div class="col col-12  d-flex flex-sm-column flex-lg-row flex-column col-sm-12 col-xl-3 col-lg-3 col-md-3   ">
       <div class="card text-center">
-        <div class="card-body">
+        <div class="card-body bg-e3f2fd">
           <p class="card-text">Beverly Hills,
             Santa Monica, Malibu</p>
-          <button class="btn btn-dark"><i class="fas fa-phone"></i> <a href="tel:(310) 724-5816" class=" text-white text-decoration-none ">(310) 724-5816</a></button>
+          <button class="btn btn-secondary "><i class="fas fa-phone"></i> <a href="tel:(310) 724-5816" class=" text-white text-decoration-none ">(310) 724-5816</a></button>
       </div>
       </div>
     </div>
     <div class="col col-12  d-flex flex-sm-column flex-lg-row flex-column col-sm-12 col-xl-3 col-lg-3 col-md-3   ">
       <div class="card text-center">
-        <div class="card-body">
+        <div class="card-body bg-e3f2fd">
           <p class="card-text">Pasadena,
             San Marino, Altadena</p>
-          <button class="btn btn-dark"><i class="fas fa-phone"></i> <a href="tel:(626) 296-2816" class=" text-white text-decoration-none ">(626) 296-2816</a></button>
+          <button class="btn btn-secondary "><i class="fas fa-phone"></i> <a href="tel:(626) 296-2816" class=" text-white text-decoration-none ">(626) 296-2816</a></button>
       </div>
       </div>
     </div>
   </div>
+  <br>
 </div>
 
-<br>
+<!-- <br> -->
 
 <!-- social accounts -->
-<div class="container">
+<div class="container bg-e3f2fd">
   <div class="row">
     <div class="col text-center col-12  ">
       <!-- <img src="./assets/fb.png" alt="" class="logo ">
@@ -228,7 +326,7 @@
 </div>
 
 <!-- footer -->		
-<div class="container">
+<div class="container bg-e3f2fd">
   <div class="row">
     <div class="col-sm text-center">
       <p class="attribution">&copy; 2002-2023 BROTHERS SHEET METAL&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;SITE BY: <a href="mailto:uaf.khurram@gmail.com" class=" text-decoration-none text-black ">Khurram</a></p>
